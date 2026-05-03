@@ -665,16 +665,23 @@
     .form-group textarea,
     .form-group select {
       width: 100%;
-      background: rgba(255,255,255,0.03);
+      background: rgba(255,255,255,0.05);
       border: 1px solid var(--glass-border);
       color: var(--off-white); padding: 14px;
       font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
       outline: none; transition: var(--transition); border-radius: 2px;
     }
     @media (min-width: 1024px) { .form-group input, .form-group textarea, .form-group select { padding: 16px; font-size: 0.95rem; } }
+    
+    /* Specific fix for select options visibility */
+    .form-group select option {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
     .form-group input:focus,
     .form-group textarea:focus,
-    .form-group select:focus { border-color: var(--gold); background: rgba(255,255,255,0.06); }
+    .form-group select:focus { border-color: var(--gold); background: rgba(255,255,255,0.08); }
     .form-group textarea { resize: none; height: 100px; }
     @media (min-width: 1024px) { .form-group textarea { height: 120px; } }
     
